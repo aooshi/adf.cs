@@ -1,0 +1,2 @@
+TestServer /c
+pause

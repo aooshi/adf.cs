@@ -1,0 +1,56 @@
+<= 1.4
+	Data Serializer:
+		ProtoBuf.Serializer
+
+	Connetion Server:
+		CsInfo Data Length + CsInfo Data
+	
+	Command:
+
+		Request:
+				Parameter Count(int) + Server Name Data Length + Server Name Data + Command Name Data Length + Command Name Data +
+				Parameter1 Data Length + Parameter1 Data +
+				Parameter2 Data Length + Parameter2 Data +
+							...	...
+				ParameterN Data Length + ParameterN Data
+
+		Success Response:
+				CsResult(int) +  Result Data Lenght + Result Data + 
+				Output Parameter Count(int) +
+				Output Parameter1 Index + Output Parameter1 Data Length + Output Parameter1 Data +
+				Output Parameter2 Index + Output Parameter2 Data Length + Output Parameter2 Data +
+							...	...
+				Output ParameterN Index + Output ParameterN Data Length + Output ParameterN Data
+
+		Failure Response:
+				CsResult(int) +  Result Lenght + Result Body
+
+
+=> 1.4
+	Protocol Version: 2
+	Data Serializer:
+		Adf.DataSerializable
+
+	Connetion Server:
+		reserve1(byte) + reserve2(byte) + reserve3(byte) + Protocol Version(byte)
+	
+	Command:
+
+		Request:
+				Parameter Count(byte) + Server Name Data Length + Server Name Data + Command Name Data Length + Command Name Data +
+				Parameter1 Data Length + Parameter1 Data +
+				Parameter2 Data Length + Parameter2 Data +
+							...	...
+				ParameterN Data Length + ParameterN Data
+
+		Success Response:
+				CsResult(byte) + 
+				Output Parameter Count(byte) +
+				Output Parameter1 Index(byte) + Output Parameter1 Data Length + Output Parameter1 Data +
+				Output Parameter2 Index(byte) + Output Parameter2 Data Length + Output Parameter2 Data +
+							...	...
+				Output ParameterN Index(byte) + Output ParameterN Data Length + Output ParameterN Data +
+				Result Data Lenght + Result Data
+
+		Failure Response:
+				CsResult(byte) + Result Lenght + Result Body

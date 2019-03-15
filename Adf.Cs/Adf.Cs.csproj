@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{438E78CD-5C67-4D9D-9636-563D96A09DC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adf.Cs</RootNamespace>
+    <AssemblyName>Adf.Cs</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\develop\bin\adf.cs\net20\1.4.4\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\develop\bin\adf.cs\net20\1.4.4\Adf.Cs.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adf">
+      <HintPath>C:\develop\bin\adf4\adf20\4.6.13\Adf.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>C:\develop\bin\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientBuilder.cs" />
+    <Compile Include="ClientHashKeyAttribute.cs" />
+    <Compile Include="CsHelper.cs" />
+    <Compile Include="CsSerializer.cs" />
+    <Compile Include="CsException.cs" />
+    <Compile Include="ClientSession.cs" />
+    <Compile Include="CsInfo.cs" />
+    <Compile Include="CsResult.cs" />
+    <Compile Include="CsType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClientSessionPoolMember.cs" />
+    <Compile Include="CsSocket.cs" />
+    <Compile Include="CsTimeoutException.cs" />
+    <Compile Include="CsDataSerializer.cs" />
+    <Compile Include="ServerCache.cs" />
+    <Compile Include="ServerCacheDelete.cs" />
+    <Compile Include="ServerCacheType.cs" />
+    <Compile Include="ServerCommand.cs" />
+    <Compile Include="ServerCommandInfo.cs" />
+    <Compile Include="ServerConfig.cs" />
+    <Compile Include="ServerConfigItem.cs" />
+    <Compile Include="ServerListen.cs" />
+    <Compile Include="ServerLogger.cs" />
+    <Compile Include="ServerSession.cs" />
+    <Compile Include="ServerSocketState.cs" />
+    <Compile Include="ServerSession2.cs" />
+    <Compile Include="ClientBuilderException.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

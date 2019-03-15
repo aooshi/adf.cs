@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC86EE7B-A81D-4BE0-B79C-15F93DA9B514}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adf.Cs</RootNamespace>
+    <AssemblyName>Adf.Cs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\develop\bin\adf.cs\net40\1.4.4\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>C:\develop\bin\adf.cs\net40\1.4.4\\Adf.Cs.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adf">
+      <HintPath>C:\develop\bin\adf4\adf40\4.6.13\Adf.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>C:\develop\bin\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="..\Adf.Cs\Client.cs">
+      <Link>Client.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ClientBuilder.cs">
+      <Link>ClientBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ClientBuilderException.cs">
+      <Link>ClientBuilderException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ClientHashKeyAttribute.cs">
+      <Link>ClientHashKeyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ClientSession.cs">
+      <Link>ClientSession.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ClientSessionPoolMember.cs">
+      <Link>ClientSessionPoolMember.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\CsDataSerializer.cs">
+      <Link>CsDataSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\CsException.cs">
+      <Link>CsException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\CsHelper.cs">
+      <Link>CsHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\CsInfo.cs">
+      <Link>CsInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\CsResult.cs">
+      <Link>CsResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\CsSerializer.cs">
+      <Link>CsSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\CsSocket.cs">
+      <Link>CsSocket.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\CsTimeoutException.cs">
+      <Link>CsTimeoutException.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\CsType.cs">
+      <Link>CsType.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerCache.cs">
+      <Link>ServerCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerCacheDelete.cs">
+      <Link>ServerCacheDelete.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerCacheType.cs">
+      <Link>ServerCacheType.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerCommand.cs">
+      <Link>ServerCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerCommandInfo.cs">
+      <Link>ServerCommandInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerConfig.cs">
+      <Link>ServerConfig.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerConfigItem.cs">
+      <Link>ServerConfigItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerListen.cs">
+      <Link>ServerListen.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerLogger.cs">
+      <Link>ServerLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerSession.cs">
+      <Link>ServerSession.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerSession2.cs">
+      <Link>ServerSession2.cs</Link>
+    </Compile>
+    <Compile Include="..\Adf.Cs\ServerSocketState.cs">
+      <Link>ServerSocketState.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

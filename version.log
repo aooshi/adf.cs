@@ -1,0 +1,53 @@
+1.4.3
+	Remove: CsRegistry module
+	Note:	support adf.dll 4.6.7
+	Add:	CsInvokeException
+	Mod:	log format
+
+1.4.2
+	Add:	setting HashVNodeCount
+	Remove:	init HashVNodeCount
+	Remove: ConfigSection.Hash property
+	Add:	CsRegistry module
+
+1.4.1
+	Add: Client.HashCommand
+	Add: Client.ClientHashKeyAttribute
+	Add: Client.CreateLogManager
+	Add: ClientBuilderException
+	Add: CsHelper.GetClient<T>(string server, string[] hostOrIps)
+	Add: CsHelper.GetClient<T>(string server, string hostOrIp, int port)
+	Opt: ClientBuilder
+
+1.4
+	Edit: Serializer mode
+	Opt: Client.Command
+	Remove: ObjectCache
+	Remove: Client.CommandMember
+	Remove: IClientStore,ClientStore
+	Remove: ClientLogger
+	Remove: Custom Cache Delete for config, CacheDeleteArgs , action tag
+	Remove: CommandAttribute
+	Merge: Adf.Cs.Server To Adf.Cs
+	Add: Client.LogManager
+	Add: CsHelper.GetClient
+	Opt: PoolMember & ClientSession Initialize
+	Add: Client(ip,port)
+
+1.3
+	Fix: ServerSession  cache delete check  bug
+	Fix: empty new socket (NewSessionConnectionUnfinished)
+	Opt: Server Receive ReceiveCommand
+	Add: Client Receive Timeout
+	Opt: Listen.AcceptCallback
+	Remove: CsId
+	Add: CsHelper
+1.2
+	depend on adf 4.2
+	remove Adf.Cs.Redis project
+	remove Adf.Cs.DefautCache, support Adf.Web.WebProgressCache
+	forbidden Adf.Cs.Server.ICache ,use Adf.ICache
+	update Adf.Cs.Server cache structure
+	Adf.Cs.Client add property AvailableSession
+	Adf.Cs.Client add property RuningSession
+	Adf.Cs.Client add appSetting Config Cs:MemberThreadSize, default 800
