@@ -36,13 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Adf">
-      <HintPath>C:\develop\bin\adf4\adf40\4.6.13\Adf.dll</HintPath>
+      <HintPath>..\libs\adf\4.6.13\net20\Adf.dll</HintPath>
     </Reference>
     <Reference Include="Adf.Service">
-      <HintPath>C:\develop\bin\adf.service\40\2.0.2\Adf.Service.dll</HintPath>
-    </Reference>
-    <Reference Include="Adf.Web">
-      <HintPath>C:\develop\bin\adf4\Adf.Web.dll</HintPath>
+      <HintPath>..\libs\adf.service\2.0.2\net20\Adf.Service.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
@@ -73,9 +70,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Adf.Cs40\Adf.Cs40.csproj">
-      <Project>{AC86EE7B-A81D-4BE0-B79C-15F93DA9B514}</Project>
-      <Name>Adf.Cs40</Name>
+    <ProjectReference Include="..\Adf.Cs\Adf.Cs.csproj">
+      <Project>{438E78CD-5C67-4D9D-9636-563D96A09DC9}</Project>
+      <Name>Adf.Cs</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

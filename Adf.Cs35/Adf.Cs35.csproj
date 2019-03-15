@@ -25,18 +25,18 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>C:\develop\bin\adf.cs\net35\1.4.4\</OutputPath>
+    <OutputPath>C:\develop\bin\adf.cs\1.4.4\net35\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>C:\develop\bin\adf.cs\net35\1.4.4\Adf.Cs.XML</DocumentationFile>
+    <DocumentationFile>C:\develop\bin\adf.cs\1.4.4\net35\Adf.Cs.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Adf">
-      <HintPath>C:\develop\bin\adf4\adf35\4.6.13\Adf.dll</HintPath>
+      <HintPath>..\libs\adf\4.6.13\net35\Adf.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net">
-      <HintPath>C:\develop\bin\protobuf-net.dll</HintPath>
+      <HintPath>..\libs\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
